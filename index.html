@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Propostas MaiSeller</title>
+<style>:root{--brand:#4C1D95;--brand-2:#7C3AED;--brand-light:#EDE9FE;--bg:#F8F7FF;--card:#fff;--border:#E5E7EB;--text:#111827;--t2:#374151;--t3:#6B7280;--t4:#9CA3AF;--ok:#16A34A;--ok-bg:#F0FDF4;--ok-brd:#BBF7D0;--err:#DC2626;--err-bg:#FEF2F2;--err-brd:#FECACA;--warn:#D97706;--warn-bg:#FFFBEB;--warn-brd:#FDE68A;--r:12px}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:72px}.hdr{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;padding:16px 20px 18px}.hdr h1{font-size:17px;font-weight:800}.hdr p{font-size:12px;opacity:.7;margin-top:2px}.body{max-width:640px;margin:0 auto;padding:14px}.nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);display:flex;box-shadow:0 -2px 12px rgba(76,29,149,.1);z-index:50}.nav button{flex:1;background:none;border:none;padding:10px 4px 8px;font-size:10px;font-weight:700;color:var(--t4);display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;text-transform:uppercase;letter-spacing:.02em}.nav button .ic{font-size:20px;line-height:1}.nav button.active{color:var(--brand-2)}.view{display:none}.view.active{display:block}.slabel{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--t4);margin-bottom:8px}.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(76,29,149,.05)}label{display:block;font-size:12.5px;font-weight:600;color:var(--t2);margin-bottom:5px;margin-top:12px}label:first-of-type{margin-top:0}input,textarea,select{width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;background:#fff;color:var(--text);font-family:inherit;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--brand-2)}textarea{resize:vertical;min-height:76px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 18px;border-radius:9px;border:none;font-size:14px;font-weight:700;cursor:pointer;width:100%;margin-top:12px;font-family:inherit}.btn-p{background:var(--brand-2);color:#fff}.btn-p:disabled{opacity:.55}.btn-g{background:var(--brand-light);color:var(--brand);width:auto;margin-top:8px;padding:8px 14px;font-size:13px;border-radius:8px;border:none;cursor:pointer;font-family:inherit;font-weight:600}.btn-sm{padding:6px 12px;font-size:12px;margin-top:6px;width:auto;border-radius:8px}.ok{background:var(--ok-bg);color:var(--ok);padding:10px 13px;border-radius:9px;font-size:13px;font-weight:600;margin-top:10px;border:1px solid var(--ok-brd)}.er{background:var(--err-bg);color:var(--err);padding:10px 13px;border-radius:9px;font-size:13px;font-weight:600;margin-top:10px;border:1px solid var(--err-brd)}.loading{text-align:center;padding:18px;color:var(--t3);font-size:13px}.sc{border-radius:var(--r);padding:14px 16px;margin-bottom:10px;border:1.5px solid;transition:opacity .2s}.sc.off{opacity:.42}.sh{display:flex;align-items:center;gap:9px;margin-bottom:8px}.se{font-size:21px;flex-shrink:0}.sn{font-size:14px;font-weight:700;flex:1}.sa{display:flex;align-items:center;gap:7px;flex-shrink:0}.bb{font-size:10px;padding:2px 8px;border-radius:99px;border:1.5px solid;cursor:pointer;font-weight:700;background:none;font-family:inherit}.bb.on{background:var(--ok-bg);color:var(--ok);border-color:var(--ok-brd)}.bb.off{color:var(--t4);border-color:var(--border)}.tgl{width:38px;height:22px;border-radius:99px;border:none;cursor:pointer;position:relative;transition:background .2s;flex-shrink:0}.tgl.on{background:var(--ok)}.tgl.off{background:#D1D5DB}.tgl::after{content:'';position:absolute;width:16px;height:16px;border-radius:50%;background:#fff;top:3px;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}.tgl.on::after{left:19px}.tgl.off::after{left:3px}.sd{font-size:12px;line-height:1.6;margin-bottom:8px}.stags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}.stag{font-size:11px;padding:2px 8px;border-radius:99px;background:rgba(255,255,255,.6);border:1px solid currentColor}.vgrid{display:grid;gap:6px;margin-top:8px}.vgrid-4{grid-template-columns:repeat(4,1fr)}.vgrid-3{grid-template-columns:repeat(3,1fr)}.vlabel{font-size:10px;font-weight:700;opacity:.65;margin-bottom:3px;text-transform:uppercase}.vinput{width:100%;font-size:12px;padding:5px 7px;border:1.5px solid;border-radius:7px;background:rgba(255,255,255,.7);font-family:inherit}.pgt{font-size:11px;font-weight:700;color:var(--brand-2);text-transform:uppercase;letter-spacing:.06em;margin:16px 0 8px;display:flex;align-items:center;gap:6px}.pgt span{flex:1;height:1px;background:var(--brand-light)}.oi{background:#fff;border:1.5px solid var(--border);border-radius:9px;padding:11px 13px;margin-bottom:8px}.oi.bon{border-color:var(--ok-brd)}.on-name{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.on-desc{font-size:11.5px;color:var(--t3);margin-top:3px}.on-bon{font-size:10px;background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok-brd);border-radius:6px;padding:3px 9px;margin-top:5px;font-weight:600}.oi-grid{display:grid;grid-template-columns:70px 1fr auto;gap:8px;align-items:end;margin-top:8px}.oi-label{font-size:10px;font-weight:700;color:var(--t3);text-transform:uppercase;margin-bottom:3px}.oi-input{width:100%;font-size:13px;padding:6px 8px;border:1.5px solid var(--border);border-radius:8px;font-family:inherit;outline:none}.oi-input:focus{border-color:var(--brand-2)}.oi-total{font-size:12px;font-weight:700;color:var(--brand);background:var(--brand-light);padding:6px 9px;border-radius:8px;white-space:nowrap;text-align:center}.oi-avulso{font-size:11px;color:#0369A1;background:#F0F9FF;border:1px solid #BAE6FD;padding:5px 10px;border-radius:7px;margin-top:6px;display:flex;align-items:center;gap:5px}.oi-btns{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}.oi-btns button{font-size:11px;font-weight:700;padding:5px 10px;border-radius:7px;cursor:pointer;font-family:inherit}.rrow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px;align-items:center}.rrow:last-child{border:none}.rrow.tot{font-size:15px;font-weight:800;border-top:2px solid var(--text);padding-top:10px;margin-top:4px}.dr{display:flex;align-items:center;gap:10px;margin-bottom:9px}.dr label{font-size:13px;color:var(--t2);width:150px;flex-shrink:0;margin:0}.dr input{font-size:13px;padding:6px 9px;border:1.5px solid var(--border);border-radius:8px;background:#fafafa;font-family:inherit;outline:none}.pw{display:none;border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:12px}.ph{background:var(--brand);padding:9px 14px;display:flex;justify-content:space-between;align-items:center}.ph span{font-size:13px;color:#DDD6FE;font-weight:600}#pframe{width:100%;border:none;display:block}.inst{background:var(--warn-bg);border:1.5px solid var(--warn-brd);border-radius:9px;padding:11px 13px;margin-top:9px;font-size:13px;color:#92400E;line-height:1.7;display:none}</style>
+</head><body><div class="hdr"><h1>💼 Propostas MaiSeller</h1><p>Gerador inteligente · sincronizado entre dispositivos</p></div><div class="body"><div class="view active" id="vS"><div id="slist"></div><div class="card" style="border-style:dashed;border-color:var(--brand-light)"><div class="slabel">➕ Novo serviço / pilar</div><label style="margin-top:0">Nome *</label><input id="nn" placeholder="Ex: MaiSeller — Plano Bronze" /><label>Contexto para IA</label><input id="nc" placeholder="Ex: automações, WhatsApp, dashboards" /><div style="display:flex;gap:8px;margin-top:10px"><button class="btn btn-p btn-sm" style="flex:1;margin:0" onclick="addSvc()">✨ Criar com IA</button><button class="btn btn-g btn-sm" style="flex:1;margin:0" onclick="addSvcSimples()">➕ Em branco</button></div><div id="add-st" style="font-size:12px;color:var(--t3);margin-top:7px;min-height:16px;text-align:center"></div></div></div><div class="view" id="vO"><div class="card"><div class="slabel">Dados do cliente</div><label style="margin-top:0">Nome / empresa *</label><input id="cn" placeholder="Ex: Padaria São João Ltda" /><label>Segmento</label><input id="cs" placeholder="Ex: Franquia de bolos" /><label>Objetivo do cliente *</label><textarea id="co" rows="4" placeholder="O que o cliente quer alcançar..."></textarea><label>Plano contratado</label><select id="cp"><option value="mensal">Mensal</option><option value="trimestral">Trimestral</option><option value="semestral">Semestral</option><option value="anual" selected>Anual</option></select><label>Prazo estimado</label><input id="cpr" placeholder="Ex: 12 meses" /><label>Tom da proposta</label><select id="ct"><option value="consultivo">Consultivo e empático</option><option value="profissional">Profissional e direto</option><option value="executivo">Executivo e estratégico</option></select><button class="btn btn-p" onclick="gerarOrc()">🤖 Montar orçamento com IA</button><div id="om"></div></div><div id="ores" style="display:none"><div class="card"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><div class="slabel" style="margin:0">Serviços do orçamento</div><button class="btn-g btn-sm" style="margin:0;padding:5px 11px;font-size:12px" onclick="togAddP()">➕ Adicionar</button></div><div id="apanel" style="display:none;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:11px;margin-bottom:10px"><div class="slabel" style="margin-bottom:7px">Selecione para adicionar</div><div id="alista"></div></div><div id="oitens"></div></div><div class="card"><div class="slabel">Descontos e condições</div><div class="dr"><label>Desconto (%)</label><input type="number" id="dp" value="0" min="0" oninput="calcR()" /></div><div class="dr"><label>Desconto (R$)</label><input type="number" id="dv" value="0" min="0" oninput="calcR()" /></div><div class="dr"><label>Parcelamento</label><input type="number" id="dparc" placeholder="Nº parcelas" min="1" max="60" style="width:90px" oninput="calcR()" /><span style="font-size:13px;color:var(--t3)">x (0=à vista)</span></div><div class="dr"><label>Condição extra</label><input type="text" id="dpa" placeholder="Ex: entrada + 11x" style="width:200px" oninput="calcR()" /></div></div><div class="card"><div class="slabel">Resumo financeiro</div><div id="rfin"></div></div><div id="ep" class="er" style="display:none">Preencha nome e objetivo do cliente.</div><button class="btn btn-p" onclick="gerarProp()">📄 Gerar proposta visual</button><div id="pm"></div><div id="inst" class="inst">Abra o .html no navegador → Cmd+P → Salvar como PDF. Ative "Gráficos de fundo".</div><div class="pw" id="pw"><div class="ph"><span>📄 Proposta pronta</span><div style="display:flex;gap:7px"><button onclick="baixarHTML()" style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);color:#fff;padding:5px 13px;border-radius:7px;cursor:pointer;font-size:12px;font-weight:600">📥 Baixar HTML</button><button onclick="document.getElementById('pw').style.display='none'" style="background:rgba(255,255,255,.1);border:none;color:#fff;padding:5px 11px;border-radius:7px;cursor:pointer;font-size:12px">✕</button></div></div><iframe id="pframe" title="Proposta" height="680"></iframe></div></div></div></div><nav class="nav"><button class="active" id="nS" onclick="go('S')"><span class="ic">🗂️</span>Serviços</button><button id="nO" onclick="go('O')"><span class="ic">📋</span>Orçamento</button></nav>
+<script>
+async function gst(k){try{const r=await window.storage.get(k,true);return r?JSON.parse(r.value):null;}catch{return null;}}
+async function sst(k,v){try{await window.storage.set(k,JSON.stringify(v),true);return true;}catch{return false;}}
+const MEC=[
+  {id:'m1',nome:'1º Estratégia',emoji:'🎯',bg:'#EFF6FF',txt:'#1E40AF',borda:'#BFDBFE',desc:'Diagnóstico completo, visão de 12 meses e planejamento estratégico.',ativo:true,bonus:false,vM:5000,vT:13500,vS:24000,vA:40000,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Diagnóstico completo','Visão 12 meses','Missão e valores','Organograma estratégico','Indicadores de alcance','Planejamento estratégico','Cronograma','Plano de crescimento']},
+  {id:'m2',nome:'2º Pessoas',emoji:'👥',bg:'#F0FDF4',txt:'#166534',borda:'#BBF7D0',desc:'Estruturação de equipe, cargos, carreira, liderança e cultura organizacional.',ativo:true,bonus:false,vM:'',vT:13500,vS:24000,vA:40000,vX:'',vQ:1,planos:['trimestral','semestral','anual'],itens:['Workshop apresentação','Levantamento de cargos','Metas por setor','Plano de carreira','Formação de liderança','Plano de treinamento','Aplicação DISC']},
+  {id:'m3',nome:'3º Processos estratégicos',emoji:'⚙️',bg:'#FFFBEB',txt:'#92400E',borda:'#FDE68A',desc:'Mapeamento e implantação de processos em todas as áreas da operação.',ativo:true,bonus:false,vM:'',vT:13500,vS:24000,vA:40000,vX:'',vQ:1,planos:['trimestral','semestral','anual'],itens:['Processos comerciais','Processos de marketing','Processo de atendimento','Processo de entrega','Processo de compras','Processo financeiro','Processos administrativos']},
+  {id:'m4',nome:'4º Produtos e vendas',emoji:'🛒',bg:'#FFF1F2',txt:'#9F1239',borda:'#FECDD3',desc:'Estratégia de produtos, canais de vendas, ticket médio e cultura de resultados.',ativo:true,bonus:false,vM:'',vT:13500,vS:24000,vA:40000,vX:'',vQ:1,planos:['trimestral','semestral','anual'],itens:['Mix de produtos','Novos canais de vendas','Esteira de ticket médio','Cultura de vendas','Metas estratégicas','Novas oportunidades']},
+  {id:'m5',nome:'5º Ciclo de melhoria contínua',emoji:'🔄',bg:'#F5F3FF',txt:'#4C1D95',borda:'#DDD6FE',desc:'Implantação de dashboards, empresa autogerenciável e inovação contínua.',ativo:true,bonus:false,vM:'',vT:13500,vS:24000,vA:40000,vX:'',vQ:1,planos:['trimestral','semestral','anual'],itens:['Dashboards operacionais','Análise diária/semanal/mensal','Empresa autogerenciável','Revisão mensal','Inovação contínua','2 encontros mensais','Grupo WhatsApp']},
+];
+const SVC_EXTRA=[
+  {id:'x1',nome:'MaiSeller - Plano Bronze',emoji:'🥉',bg:'#FFF7ED',txt:'#9A3412',borda:'#FED7AA',desc:'Atendimento automatizado 24/7 com IA no WhatsApp e Instagram.',ativo:true,bonus:false,vM:349,vT:957,vS:1797,vA:2997,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Agente IA com atendimento automático','Chat omnichannel WhatsApp + Instagram','Follow-up automático de conversas','Disponibilidade 24h, 7 dias','Redução de custos de atendimento']},
+  {id:'x2',nome:'MaiSeller - Plano Prata',emoji:'🥈',bg:'#F8FAFC',txt:'#334155',borda:'#CBD5E1',desc:'CRM e inteligência comercial para acelerar vendas.',ativo:true,bonus:false,vM:597,vT:1557,vS:2997,vA:5397,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Automação de processos e e-mail marketing','CRM com Pipeline de Vendas completo','Copiloto de lead','Nutrição e reativação de leads','Todos recursos do Bronze']},
+  {id:'x3',nome:'MaiSeller - Plano Ouro',emoji:'🥇',bg:'#FEFCE8',txt:'#854D0E',borda:'#FDE68A',desc:'Plano completo com marketing, pós-venda e suporte individual.',ativo:true,bonus:false,vM:997,vT:2897,vS:5397,vA:9597,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Landing Pages, Funil e Quiz personalizados','Pipeline Pós-venda com Help Center','Suporte Individual incluso no plano','Revisões mensais de fluxos','Tudo do Prata + crescimento']},
+  {id:'x4',nome:'MaiSeller - Implantação',emoji:'🚀',bg:'#F0F9FF',txt:'#0369A1',borda:'#BAE6FD',desc:'Setup da estrutura comercial com IA e canais integrados.',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:997,vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Setup completo MaiSeller','Configuração dos canais','Criação e treinamento do 1º Agente IA','Integração com captação de leads','Acompanhamento dos resultados']},
+  {id:'x5',nome:'MaiSeller - 1 Agente IA adicional',emoji:'🤖',bg:'#F5F3FF',txt:'#4C1D95',borda:'#DDD6FE',desc:'Implantação de 1 Agente de IA adicional personalizado.',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:497,vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Criação de 1 Agente IA personalizado','Integração com os canais definidos','Treinamento com base de conhecimento','Testes e validação do fluxo','1 mês de suporte incluso']},
+  {id:'x6',nome:'MaiSeller - Automação',emoji:'⚙️',bg:'#F0FDF4',txt:'#166534',borda:'#BBF7D0',desc:'Automação inteligente de mensagens em massa via API oficial do WhatsApp.',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:497,vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Templates homologados na API oficial','Fluxo de envio em massa','Segmentação e personalização dinâmica','Monitoramento de entregas e respostas','Integração MaiSeller com disparo']},
+  {id:'x7',nome:'MaiSeller - 1.000 leads adicionais',emoji:'🚀',bg:'#FFF1F2',txt:'#9F1239',borda:'#FECDD3',desc:'1.000 leads extras para ampliar alcance e acelerar vendas.',ativo:true,bonus:false,vM:100,vT:300,vS:600,vA:1200,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['1.000 contatos para prospecção ativa','Leads integrados à base existente','Sem duplicidades ou perda de dados','Expansão conforme demanda','Ativação imediata após contratação']},
+  {id:'x8',nome:'MaiSeller - Canal adicional',emoji:'📲',bg:'#F0F9FF',txt:'#0369A1',borda:'#BAE6FD',desc:'Canal adicional integrado ao MaiSeller.',ativo:true,bonus:false,vM:50,vT:150,vS:300,vA:600,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['1 canal adicional: WhatsApp, Instagram ou Facebook','Integração completa com o painel MaiSeller','Atendimento e vendas centralizados','Configuração e ativação inclusas','Suporte ao canal contratado']},
+  {id:'x9',nome:'MaiSeller - Usuário adicional',emoji:'👤',bg:'#F5F3FF',txt:'#4C1D95',borda:'#DDD6FE',desc:'Adicione +1 usuário ao plano e expanda o acesso da equipe.',ativo:true,bonus:false,vM:25,vT:75,vS:150,vA:300,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['1 login adicional ao plano','Acesso completo ao plano base','Gestão pelo administrador','Mesmo suporte do plano','Ativação imediata após contratação']},
+  {id:'x10',nome:'MaiSeller - CRM',emoji:'🤝',bg:'#F0FDF4',txt:'#166534',borda:'#BBF7D0',desc:'Gerencie clientes e vendas com inteligência — funil, histórico e follow-ups.',ativo:true,bonus:false,vM:500,vT:1500,vS:3000,vA:6000,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Cadastro e segmentação','Funil de vendas visual e intuitivo','Histórico de interações','Follow-ups automatizados','Relatórios de desempenho']},
+  {id:'x11',nome:'MaiSeller - Landing Page',emoji:'🚀',bg:'#FEFCE8',txt:'#854D0E',borda:'#FDE68A',desc:'Landing pages de alta conversão, design responsivo e integração completa.',ativo:true,bonus:false,vM:300,vT:900,vS:1800,vA:3600,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Design personalizado e responsivo para todos os dispositivos','Estrutura focada em conversão','Integração com CRM e automação','Otimização de velocidade e SEO','Painel de métricas e acompanhamento de resultados']},
+  {id:'x12',nome:'MaiSeller - Suporte Individual',emoji:'🎧',bg:'#FFF7ED',txt:'#9A3412',borda:'#FED7AA',desc:'Suporte técnico dedicado com atendimento individual e SLA garantido.',ativo:true,bonus:false,vM:800,vT:2400,vS:4800,vA:9600,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Atendimento individual exclusivo','Resolução de dúvidas operacionais','Suporte a erros e instabilidades','Tempo de resposta garantido conforme SLA contratado','Acompanhamento de chamados']},
+  {id:'x13',nome:'G&G - Consultoria MaiSeller',emoji:'🤖',bg:'#F5F3FF',txt:'#4C1D95',borda:'#DDD6FE',desc:'Consultoria em processos, IA e automações.',ativo:true,bonus:false,vM:15000,vT:42000,vS:78000,vA:144000,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Consultoria de processos','Otimização da plataforma MaiSeller','Criação de agentes de IA','Automações e integrações','Páginas e experiências digitais']},
+  {id:'x14',nome:'G&G - Automações e dashboards',emoji:'⚙️',bg:'#FFFBEB',txt:'#92400E',borda:'#FDE68A',desc:'Automações, dashboards e ferramentas sob medida — por entrega criada.',ativo:true,bonus:false,vM:500,vT:1500,vS:3000,vA:6000,vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Automações e integrações de processos','Dashboards interativos com indicadores em tempo real','Ferramentas personalizadas para operações internas','Manutenção contínua das entregas','Suporte para cada automação']},
+  {id:'x15',nome:'G&G - Treinamento Elite de Vendas',emoji:'🏆',bg:'#FEFCE8',txt:'#854D0E',borda:'#FDE68A',desc:'Treinamento intensivo para transformar vendedores em alta performance.',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:15000,vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Metodologia de vendas consultivas','Técnicas avançadas de negociação e fechamento','Gestão de pipeline e previsibilidade de receita','Mindset e resiliência comercial','Acompanhamento com métricas e plano de evolução']},
+  {id:'x16',nome:'G&G - Formação Executiva Líderes',emoji:'🏆',bg:'#EFF6FF',txt:'#1E40AF',borda:'#BFDBFE',desc:'Transforme líderes em multiplicadores de resultados com métodos de alta performance.',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:15000,vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:['Times autônomos e orientados a resultados','Processos independentes do líder','Metodologias para metas e KPIs','Cultura de melhoria contínua e accountability','Ferramentas de liderança escaláveis']},
+];
+const CORS=[['#EFF6FF','#1E40AF','#BFDBFE','🧩'],['#F0FDF4','#166534','#BBF7D0','⚡'],['#FFFBEB','#92400E','#FDE68A','⭐'],['#F5F3FF','#4C1D95','#DDD6FE','🛠'],['#FFF1F2','#9F1239','#FECDD3','🚀'],['#F0F9FF','#0369A1','#BAE6FD','💡']];
+let SVCS=[],ORC=[],propHTML='';
+const fmt=v=>'R$ '+parseFloat(v||0).toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:0});
+(async function(){const sv=await gst('ms_sv');SVCS=(sv&&sv.length>0)?sv:[...JSON.parse(JSON.stringify(MEC)),...JSON.parse(JSON.stringify(SVC_EXTRA))];renderSvcs();})();
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));document.getElementById('v'+v).classList.add('active');document.getElementById('n'+v).classList.add('active');}
+function renderSvcs(){const mec=SVCS.filter(s=>s.id.startsWith('m'));const ext=SVCS.filter(s=>!s.id.startsWith('m'));let h='';if(mec.length)h+='<div class="pgt">📋 Pilares MEC <span></span></div>'+mec.map(sCard).join('');if(ext.length)h+='<div class="pgt">➕ Outros serviços <span></span></div>'+ext.map(sCard).join('');document.getElementById('slist').innerHTML=h;}
+function sCard(s){const pl=s.planos||['mensal','trimestral','semestral','anual'];const map={mensal:{k:'vM',l:'Mensal'},trimestral:{k:'vT',l:'Trim.'},semestral:{k:'vS',l:'Semes.'},anual:{k:'vA',l:'Anual'}};const campos=Object.entries(map).filter(([k])=>pl.includes(k));const nc=campos.length;return `<div class="sc ${s.ativo?'':'off'}" style="background:${s.bg};border-color:${s.borda}"><div class="sh"><span class="se">${s.emoji}</span><span class="sn" style="color:${s.txt}">${s.nome}</span><div class="sa"><button class="bb ${s.bonus?'on':'off'}" onclick="togB('${s.id}')">${s.bonus?'🎁 Bônus':'Bônus'}</button><button class="tgl ${s.ativo?'on':'off'}" onclick="togS('${s.id}')"></button></div></div><div class="sd" style="color:${s.txt}">${s.desc||'—'}</div><div class="stags">${(s.itens||[]).map(i=>`<span class="stag" style="color:${s.txt};border-color:${s.borda}">${i}</span>`).join('')}</div><div class="vgrid ${nc>=4?'vgrid-4':'vgrid-3'}">${campos.map(([,c])=>`<div><div class="vlabel" style="color:${s.txt}">${c.l}</div><input class="vinput" type="number" placeholder="R$" value="${s[c.k]||''}" style="border-color:${s.borda};color:${s.txt}" oninput="updV('${s.id}','${c.k}',this.value)" /></div>`).join('')}</div><div style="margin-top:8px;padding-top:8px;border-top:1px dashed ${s.borda};display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><div class="vlabel" style="color:${s.txt}">🔢 Quantidade</div><input class="vinput" type="number" min="1" placeholder="1" value="${s.vQ||1}" style="border-color:${s.borda};color:${s.txt};margin-top:3px" oninput="updV('${s.id}','vQ',this.value)" /></div><div><div class="vlabel" style="color:${s.txt}">💰 Avulso / único</div><input class="vinput" type="number" placeholder="R$ — opcional" value="${s.vX||''}" style="border-color:${s.borda};color:${s.txt};margin-top:3px" oninput="updV('${s.id}','vX',this.value)" /></div></div></div>`;}
+function togS(id){const s=SVCS.find(x=>x.id===id);if(s){s.ativo=!s.ativo;save();renderSvcs();}}
+function togB(id){const s=SVCS.find(x=>x.id===id);if(s){s.bonus=!s.bonus;save();renderSvcs();}}
+function updV(id,k,v){const s=SVCS.find(x=>x.id===id);if(s){s[k]=k==='vQ'?(parseInt(v)||1):v;save();}}
+async function save(){await sst('ms_sv',SVCS);}
+function getC(){return CORS[SVCS.length%CORS.length];}
+function addSvcSimples(){const inp=document.getElementById('nn');const n=inp.value.trim();if(!n){inp.style.borderColor='var(--err)';return;}inp.style.borderColor='';const c=getC();SVCS.push({id:'s'+Date.now(),nome:n,emoji:c[3],bg:c[0],txt:c[1],borda:c[2],desc:'',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:[]});inp.value='';document.getElementById('nc').value='';save();renderSvcs();}
+async function addSvc(){const inp=document.getElementById('nn');const ctx=document.getElementById('nc');const n=inp.value.trim();if(!n){inp.style.borderColor='var(--err)';return;}inp.style.borderColor='';const st=document.getElementById('add-st');const btn=event.target;btn.disabled=true;btn.textContent='Gerando...';st.textContent='✨ A IA está criando...';try{const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:350,messages:[{role:'user',content:`Crie um serviço para proposta comercial. Nome: "${n}". ${ctx.value?'Contexto: '+ctx.value:''}. Responda APENAS JSON: {"desc":"frase curta até 100 chars","itens":["item1","item2","item3","item4","item5"],"emoji":"emoji"}`}]})});const d=await res.json();const p=JSON.parse((d.content?.map(c=>c.text||'').join('')||'{}').replace(/```json|```/g,'').trim());const c=getC();SVCS.push({id:'s'+Date.now(),nome:n,emoji:p.emoji||c[3],bg:c[0],txt:c[1],borda:c[2],desc:p.desc||'',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:p.itens||[]});st.textContent='✓ Criado!';setTimeout(()=>st.textContent='',3000);}catch{const c=getC();SVCS.push({id:'s'+Date.now(),nome:n,emoji:c[3],bg:c[0],txt:c[1],borda:c[2],desc:'',ativo:true,bonus:false,vM:'',vT:'',vS:'',vA:'',vX:'',vQ:1,planos:['mensal','trimestral','semestral','anual'],itens:[]});st.textContent='⚠ Criado em branco.';setTimeout(()=>st.textContent='',4000);}btn.disabled=false;btn.innerHTML='✨ Criar com IA';inp.value='';ctx.value='';save();renderSvcs();}
+async function gerarOrc(){const obj=document.getElementById('co').value.trim();const msg=document.getElementById('om');if(!obj){msg.innerHTML='<div class="er">Informe o objetivo do cliente.</div>';return;}const btn=event.target;btn.disabled=true;msg.innerHTML='<div class="loading">🤖 Montando orçamento...</div>';const pl=document.getElementById('cp').value;const kv={mensal:'vM',trimestral:'vT',semestral:'vS',anual:'vA'}[pl];const svDisp=SVCS.map(s=>`ID:${s.id}|${s.nome}|${s.desc}|Valor ${pl}:${s[kv]?fmt(s[kv]):'N/A'}${s.vX?'|Avulso:'+fmt(s.vX):''}|Qtd:${s.vQ||1}|Bônus:${s.bonus?'Sim':'Não'}`).join('\n');try{const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,messages:[{role:'user',content:`Analise o objetivo e selecione os serviços mais relevantes.\nObjetivo: ${obj}\nCliente: ${document.getElementById('cn').value||'não informado'}\nSegmento: ${document.getElementById('cs').value||'não informado'}\nCatálogo:\n${svDisp}\nResponda APENAS JSON: {"servicos":[{"id":"id","just":"justificativa 1 frase","prior":"alta|media|baixa","qtd":1}],"resumo":"2 frases"}`}]})});const d=await res.json();const p=JSON.parse((d.content?.map(c=>c.text||'').join('')||'{}').replace(/```json|```/g,'').trim());ORC=[];const est=SVCS.find(x=>x.id==='m1');if(est){const vl=est[kv]||'';const jaIA=(p.servicos||[]).find(x=>x.id==='m1');const just=jaIA?jaIA.just:'Base estratégica — todo projeto começa pelo diagnóstico e planejamento.';ORC.push({...est,just,prior:'alta',pc:'var(--err)',pl2:'Base obrigatória',valor:vl,vX:est.vX||'',vQ:parseInt(est.vQ)||1});}(p.servicos||[]).forEach(sel=>{if(sel.id==='m1')return;const s=SVCS.find(x=>x.id===sel.id);if(!s)return;const vl=s[kv]||'';const pc=sel.prior==='alta'?'var(--err)':sel.prior==='media'?'var(--warn)':'var(--t3)';const pl2=sel.prior==='alta'?'Alta prioridade':sel.prior==='media'?'Prioridade média':'Complementar';ORC.push({...s,just:sel.just,prior:sel.prior,pc,pl2,valor:vl,vX:s.vX||'',vQ:parseInt(sel.qtd)||parseInt(s.vQ)||1});});let h='';if(p.resumo)h+=`<div style="background:var(--brand-light);border-radius:9px;padding:11px 13px;margin-bottom:12px;font-size:13px;color:var(--brand);line-height:1.6"><b>💡 IA:</b> ${p.resumo}</div>`;ORC.forEach(item=>{h+=renderOItem(item);});document.getElementById('oitens').innerHTML=h;['dp','dv','dparc'].forEach(id=>document.getElementById(id).value=0);document.getElementById('dpa').value='';calcR();document.getElementById('ores').style.display='block';msg.innerHTML='<div class="ok">✓ Orçamento montado!</div>';}catch(e){msg.innerHTML=`<div class="er">Erro: ${e.message}</div>`;}btn.disabled=false;}
+function renderOItem(it){const bon=it.bonus||false;const q=parseInt(it.vQ)||1;const vUnit=parseFloat(it.valor||0);const vTot=vUnit*q;const temVal=vUnit>0;const temAvulso=it.vX&&parseFloat(it.vX)>0;return `<div class="oi ${bon?'bon':''}" id="oi-${it.id}"><div class="on-name"><span>${it.emoji}</span><span>${it.nome}</span>${it.pl2?`<span style="font-size:10px;color:${it.pc};font-weight:700">${it.pl2}</span>`:''}</div>${it.just?`<div class="on-desc">${it.just}</div>`:''}${bon?`<div class="on-bon">🎁 Bônus — aparece na proposta com valor de referência</div>`:''}<div class="oi-grid"><div><div class="oi-label">Qtd</div><input class="oi-input" type="number" min="1" value="${q}" oninput="updQ('${it.id}',this.value)" style="text-align:center;font-weight:700" /></div><div><div class="oi-label">${temAvulso?'Recorrente R$':'Valor R$'}</div><input class="oi-input" type="number" placeholder="${bon?'Referência':'A definir'}" value="${it.valor||''}" oninput="updV2('${it.id}',this.value)" /></div><div>${temVal&&q>1?`<div class="oi-label">Total</div><div class="oi-total">${fmt(vTot)}</div>`:`<div class="oi-label">&nbsp;</div><div style="font-size:11px;color:var(--t4);padding-top:7px">${temVal?fmt(vTot):''}</div>`}</div></div>${temAvulso?`<div class="oi-avulso">💰 <b>${fmt(parseFloat(it.vX))}</b> avulso/implantação — entra no total como parcela única</div>`:''}<div class="oi-btns"><button onclick="togBON('${it.id}')" style="background:${bon?'var(--ok-bg)':'#F3F4F6'};border:1.5px solid ${bon?'var(--ok-brd)':'var(--border)'};color:${bon?'var(--ok)':'var(--t3)'};">${bon?'🎁 Bônus ✓':'Bônus'}</button><button onclick="remO('${it.id}')" style="background:var(--err-bg);border:1.5px solid var(--err-brd);color:var(--err);">✕ Remover</button></div></div>`;}
+function updQ(id,v){const it=ORC.find(x=>x.id===id);if(!it)return;it.vQ=Math.max(1,parseInt(v)||1);const el=document.getElementById('oi-'+id);if(el)el.outerHTML=renderOItem(it);calcR();}
+function updV2(id,v){const it=ORC.find(x=>x.id===id);if(!it)return;it.valor=v;const el=document.getElementById('oi-'+id);if(el)el.outerHTML=renderOItem(it);calcR();}
+function remO(id){ORC=ORC.filter(x=>x.id!==id);const el=document.getElementById('oi-'+id);if(el)el.remove();calcR();}
+function togBON(id){const it=ORC.find(x=>x.id===id);if(!it)return;it.bonus=!it.bonus;const el=document.getElementById('oi-'+id);if(el)el.outerHTML=renderOItem(it);calcR();}
+function togAddP(){const p=document.getElementById('apanel');const v=p.style.display==='block';if(!v){renderALista();p.style.display='block';}else p.style.display='none';}
+function renderALista(){const ids=new Set(ORC.map(x=>x.id));const disp=SVCS.filter(s=>!ids.has(s.id));const el=document.getElementById('alista');if(!disp.length){el.innerHTML='<p style="font-size:13px;color:var(--t3);text-align:center;padding:10px">Todos já estão no orçamento.</p>';return;}el.innerHTML=disp.map(s=>`<div style="display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid var(--border)" onclick="addOItem('${s.id}')"><span style="font-size:17px">${s.emoji}</span><div style="flex:1"><div style="font-size:13px;font-weight:600">${s.nome}</div><div style="font-size:11px;color:var(--t3)">${s.desc||'—'}</div></div><button style="background:var(--brand-light);border:none;color:var(--brand);padding:5px 11px;border-radius:7px;cursor:pointer;font-size:12px;font-weight:600">+ Add</button></div>`).join('');}
+function addOItem(id){const s=SVCS.find(x=>x.id===id);if(!s)return;const pl=document.getElementById('cp').value;const kv={mensal:'vM',trimestral:'vT',semestral:'vS',anual:'vA'}[pl];ORC.push({...s,just:'Adicionado manualmente',prior:'media',pc:'var(--warn)',pl2:'Manual',valor:s[kv]||'',vX:s.vX||'',vQ:parseInt(s.vQ)||1});document.getElementById('oitens').insertAdjacentHTML('beforeend',renderOItem(ORC[ORC.length-1]));calcR();renderALista();}
+function calcN(){
+  const at=ORC.filter(x=>!x.bonus&&(parseFloat(x.valor||0)>0||parseFloat(x.vX||0)>0));
+  const bn=ORC.filter(x=>x.bonus);
+  const recorrente=at.reduce((s,x)=>s+(parseFloat(x.valor||0)*(parseInt(x.vQ)||1)),0);
+  const avulsoTotal=at.reduce((s,x)=>s+parseFloat(x.vX||0)*(parseInt(x.vQ)||1),0);
+  const tot=recorrente+avulsoTotal;
+  const pct=parseFloat(document.getElementById('dp')?.value||0);
+  const vl=parseFloat(document.getElementById('dv')?.value||0);
+  const desc=(tot*pct/100)+vl;
+  return{tot,recorrente,avulsoTotal,desc,fin:Math.max(0,tot-desc),at,bn};
+}
+function calcR(){
+  const {tot,recorrente,avulsoTotal,desc,fin,at,bn}=calcN();
+  const pa=document.getElementById('dpa')?.value||'';
+  const el=document.getElementById('rfin');if(!el)return;
+  let h=at.map(s=>{const q=parseInt(s.vQ)||1;const vt=parseFloat(s.valor||0)*q;const vx=parseFloat(s.vX||0)*q;return `<div class="rrow"><span>${s.emoji} ${s.nome}${q>1?` <span style="font-size:10px;color:#4C1D95;font-weight:700">×${q}</span>`:''}</span><div style="text-align:right"><span style="font-weight:600">${(parseFloat(s.valor||0)>0)?fmt(vt):'—'}</span>${vx>0?`<br><span style="font-size:10px;color:#0369A1">+${fmt(vx)} único</span>`:''}</div></div>`;}).join('');
+  if(avulsoTotal>0)h+=`<div class="rrow" style="color:#0369A1"><span>↳ Implantações/avulsos</span><span>+${fmt(avulsoTotal)}</span></div>`;
+  if(desc>0){h+=`<div class="rrow" style="color:var(--t3)"><span>Subtotal</span><span>${fmt(tot)}</span></div>`;h+=`<div class="rrow" style="color:var(--err)"><span>Desconto</span><span>-${fmt(desc)}</span></div>`;}
+  const nparc=parseInt(document.getElementById('dparc')?.value||0);
+  const parcLabel=nparc>1?` <span style="font-size:11px;color:var(--t3)">(${nparc}x ${fmt(Math.ceil(fin/nparc))})</span>`:'';
+  h+=`<div class="rrow tot"><span>Total contratado</span><span style="color:var(--ok)">${fmt(fin)}${parcLabel}</span></div>`;
+  if(bn.length){h+='<div style="height:1px;background:var(--border);margin:7px 0"></div>';h+=`<div style="font-size:10px;font-weight:700;color:var(--ok);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">🎁 Bônus incluídos</div>`;const totBon=bn.reduce((s,b)=>s+(parseFloat(b.valor||0)*(parseInt(b.vQ)||1))+(parseFloat(b.vX||0)*(parseInt(b.vQ)||1)),0);bn.forEach(b=>{h+=`<div class="rrow" style="color:var(--ok)"><span>${b.emoji} ${b.nome}</span><span style="text-decoration:line-through;color:var(--t4)">${b.valor?fmt(parseFloat(b.valor)*(parseInt(b.vQ)||1)):'—'}</span></div>`;});if(totBon>0)h+=`<div class="rrow" style="color:var(--ok);font-weight:700"><span>Total bônus (valor de referência)</span><span>${fmt(totBon)}</span></div>`;}
+  if(pa)h+=`<div class="rrow"><span style="color:var(--t3)">Condição</span><span style="color:var(--t3)">${pa}</span></div>`;
+  el.innerHTML=h||'<p style="color:var(--t4);font-size:13px">Nenhum valor definido.</p>';
+}
+async function gerarProp(){
+  const nome=document.getElementById('cn').value.trim();const obj=document.getElementById('co').value.trim();
+  const ep=document.getElementById('ep');if(!nome||!obj){ep.style.display='block';return;}ep.style.display='none';
+  const seg=document.getElementById('cs').value.trim();const prazo=document.getElementById('cpr').value.trim();
+  const tom=document.getElementById('ct').value;const pl=document.getElementById('cp').value;
+  const plL={mensal:'Mensal',trimestral:'Trimestral',semestral:'Semestral',anual:'Anual'}[pl];
+  const {fin,recorrente,avulsoTotal,desc,at,bn,tot}=calcN();
+  const pa=document.getElementById('dpa').value;
+  const nparc=parseInt(document.getElementById('dparc')?.value||0);
+  const parcStr=nparc>1?`${nparc}x ${fmt(Math.ceil(fin/nparc))}`:'À vista';
+  const totBon=bn.reduce((s,b)=>s+(parseFloat(b.valor||0)*(parseInt(b.vQ)||1))+(parseFloat(b.vX||0)*(parseInt(b.vQ)||1)),0);
+  const btn=event.target;btn.disabled=true;
+  const pm=document.getElementById('pm');pm.innerHTML='<div class="loading">📝 Gerando proposta...</div>';
+  const ptxt=ORC.map(s=>{const q=parseInt(s.vQ)||1;const vt=parseFloat(s.valor||0)*q;return `SERVIÇO: ${s.nome}${s.bonus?' [BÔNUS]':''}${q>1?' | Quantidade: '+q:''}\nItens entregues (liste TODOS): ${(s.itens||[]).join(' | ')}\nDescrição: ${s.desc}\n${s.valor&&!s.bonus?'Valor ('+plL+'): '+fmt(s.valor)+(q>1?' × '+q+' = '+fmt(vt):''):''}${s.vX?' | Implantação única: '+fmt(parseFloat(s.vX)):''}`;}).join('\n\n');
+  const prompt=`Você é especialista em proposta comercial consultiva para empresas brasileiras.\nMonte uma proposta completa com os títulos ## exatamente como abaixo.\n\nCONTEXTO:\n- MEC® (Mentoria Estratégica Corporativa | Priscila Guskuma): criada em 2020 para tornar empresas autogerenciáveis. 5 pilares: Estratégia → Pessoas → Processos → Produtos/Vendas → Ciclo de Melhoria Contínua. Estratégia SEMPRE é a Fase 1.\n- MaiSeller: sistema de gestão comercial e atendimento ao cliente com IA.\n- Automações e Dashboards: automatizam processos e geram inteligência em tempo real.\n\nCLIENTE: ${nome} | Segmento: ${seg||'Não informado'} | Prazo: ${prazo||'A definir'} | Plano: ${plL}\nOBJETIVO: ${obj} | TOM: ${tom}\n\nSERVIÇOS (com TODOS os itens de entrega):\n${ptxt}\n\nINVESTIMENTO: Recorrente ${fmt(recorrente)}${avulsoTotal>0?' + Implantações '+fmt(avulsoTotal)+' (pagamento único)':''} = Total ${fmt(fin)}${desc>0?' (com desconto de '+fmt(desc)+')':''} | ${parcStr}\n${pa?'Condição: '+pa:''}\n${totBon>0?'Bônus incluídos (valor de referência): '+fmt(totBon):''}\n\n## APRESENTAÇÃO\n[Carta personalizada, 3 parágrafos, conecte com a dor do cliente e mencione MEC® e Priscila Guskuma.]\n## A METODOLOGIA MEC®\n[Explique: criada em 2020, tornar empresas autogerenciáveis, 5 pilares progressivos. Estratégia sempre Fase 1. MaiSeller como gestão comercial. 3-4 parágrafos.]\n## OS PILARES DO PROJETO\n[Para cada serviço: 3-4 frases contextualizadas para este cliente. Liste TODOS os itens de entrega exatamente como fornecidos. Se quantidade > 1, mencionar escala. Bônus = destaque especial.]\n## LINHA DO TEMPO\n[Escreva narrativamente para cada fase. Formato: "Fase 1 - Meses 1-2: [texto corrido — transformações, sistemas, resultados — SEM listar itens]". Repita Fase 2, 3, 4, 5.]\n## INVESTIMENTO\n[Mostrar recorrência + avulsos separados. Plano ${plL}. ${parcStr}. Destacar total bônus se houver.]\n## PRÓXIMOS PASSOS\n[3 passos para iniciar em 7 dias.]\n## TERMOS E CONDIÇÕES\n[Validade: 7 dias. Início: 7 dias úteis. Confidencialidade. LGPD (Lei nº 13.709/2018).]\n\nLinguagem ${tom==='executivo'?'estratégica e direta':tom==='consultivo'?'empática e consultiva':'profissional e clara'} em português brasileiro.`;
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:4500,messages:[{role:'user',content:prompt}]})});
+    const d=await res.json();const txt=d.content?.map(c=>c.text||'').join('')||'Erro.';
+    propHTML=buildHTML(nome,seg,plL,fin,recorrente,avulsoTotal,desc,tot,at,bn,pa,txt,nparc,parcStr,totBon);
+    document.getElementById('pframe').srcdoc=propHTML;
+    document.getElementById('pw').style.display='block';
+    document.getElementById('pw').scrollIntoView({behavior:'smooth',block:'start'});
+    pm.innerHTML='<div class="ok">✓ Proposta gerada!</div><button class="btn" onclick="limparOrc()" style="margin-top:10px;background:var(--err-bg);border:1.5px solid var(--err-brd);color:var(--err);font-size:13px;padding:10px">🗑️ Limpar e iniciar novo</button>';
+  }catch(e){pm.innerHTML=`<div class="er">Erro: ${e.message}</div>`;}
+  btn.disabled=false;
+}
+function buildHTML(nome,seg,plL,fin,recorrente,avulsoTotal,desc,tot,at,bn,pa,txt,nparc,parcStr,totBon){
+  const data=new Date().toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'});
+  const hs='font-size:20px;font-weight:700;color:#1E1B4B;padding-bottom:8px;border-bottom:2.5px solid #7C3AED;margin-bottom:16px';
+  const cores=['#EFF6FF','#F0FDF4','#FFFBEB','#FFF1F2','#F5F3FF','#F0F9FF'];
+  const txts=['#1E40AF','#166534','#92400E','#9F1239','#4C1D95','#0369A1'];
+  const brdas=['#BFDBFE','#BBF7D0','#FDE68A','#FECDD3','#DDD6FE','#BAE6FD'];
+
+  // MARCA
+  var marcaHdr='<div style="background:linear-gradient(135deg,#1E1B4B,#4C1D95,#7C3AED);padding:14px 36px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:13px;font-weight:800;color:#fff">MEC\u00ae \u00b7 Mentoria Estrat\u00e9gica Corporativa</div><div style="font-size:12px;color:#DDD6FE;font-weight:600">Priscila Guskuma</div></div>';
+  var marcaFtr='<div style="background:#1E1B4B;padding:14px 36px;display:flex;justify-content:space-between;align-items:center;margin-top:40px"><div style="font-size:12px;color:#A78BFA;font-weight:700">MEC\u00ae \u00b7 Mentoria Estrat\u00e9gica Corporativa | Priscila Guskuma</div><div style="font-size:11px;color:#6D28D9">V\u00e1lida por 7 dias \u00b7 Confidencial \u00b7 LGPD</div></div>';
+
+  // CAPA — valores em destaque
+  var capaValores='';
+  if(fin>0){
+    capaValores+='<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px">';
+    capaValores+='<div style="background:rgba(255,255,255,.12);border-radius:12px;padding:12px 22px;text-align:center">';
+    capaValores+='<div style="font-size:10px;color:#C4B5FD;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">Investimento '+plL+'</div>';
+    capaValores+='<div style="font-size:24px;font-weight:800;color:#fff">'+fmt(fin)+'</div>';
+    if(avulsoTotal>0) capaValores+='<div style="font-size:11px;color:#DDD6FE;margin-top:3px">+'+fmt(avulsoTotal)+' implanta\u00e7\u00e3o</div>';
+    capaValores+='</div>';
+    if(totBon>0){
+      capaValores+='<div style="background:rgba(22,163,74,.2);border:1px solid rgba(34,197,94,.3);border-radius:12px;padding:12px 22px;text-align:center">';
+      capaValores+='<div style="font-size:10px;color:#86EFAC;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">\ud83c\udf81 B\u00f4nus inclu\u00eddos</div>';
+      capaValores+='<div style="font-size:24px;font-weight:800;color:#4ADE80">'+fmt(totBon)+'</div>';
+      capaValores+='</div>';
+    }
+    capaValores+='</div>';
+  }
+
+  // PILARES com todos os itens
+  var pilarCards='';
+  ORC.forEach(function(s){
+    var q=parseInt(s.vQ)||1;
+    var vt=parseFloat(s.valor||0)*q;
+    var vx=parseFloat(s.vX||0)*q;
+    var ci=ORC.indexOf(s)%6;
+    var card='<div style="background:'+s.bg+';border:1.5px solid '+s.borda+';border-radius:14px;padding:18px 20px;margin-bottom:12px">';
+    card+='<div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">';
+    card+='<span style="font-size:24px">'+s.emoji+'</span>';
+    card+='<div style="flex:1"><div style="font-size:16px;font-weight:700;color:'+s.txt+'">'+s.nome+(q>1?' <span style="font-size:12px;opacity:.7">\u00d7'+q+'</span>':'')+'</div>';
+    if(s.bonus) card+='<span style="font-size:10px;background:#DCFCE7;color:#166534;padding:2px 8px;border-radius:99px;border:1px solid #BBF7D0">\ud83c\udf81 B\u00f4nus incluso</span>';
+    if(s.desc) card+='<div style="font-size:12px;color:'+s.txt+';opacity:.8;margin-top:4px;line-height:1.5">'+s.desc+'</div>';
+    card+='</div>';
+    card+='<div style="text-align:right;flex-shrink:0">';
+    if(s.valor&&!s.bonus) card+='<div style="font-size:16px;font-weight:700;color:'+s.txt+'">'+fmt(vt)+'</div>'+(q>1?'<div style="font-size:11px;color:'+s.txt+';opacity:.6">'+q+'\u00d7'+fmt(s.valor)+'</div>':'');
+    if(vx>0&&!s.bonus) card+='<div style="font-size:11px;color:#0369A1;font-weight:600;margin-top:3px">+'+fmt(vx)+' \u00fanico</div>';
+    card+='</div></div>';
+    card+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:4px">';
+    (s.itens||[]).forEach(function(item){
+      card+='<div style="display:flex;align-items:flex-start;gap:6px;font-size:12px;color:'+s.txt+';padding:3px 0"><span style="font-weight:700;flex-shrink:0">\u2713</span><span>'+item+'</span></div>';
+    });
+    card+='</div></div>';
+    pilarCards+=card;
+  });
+
+  // LINHA DO TEMPO narrativa
+  function buildLT(cont){
+    var nFases=ORC.length||5;
+    var periodos=['Meses 1\u20132','Meses 3\u20135','Meses 6\u20138','Meses 9\u201310','Meses 11\u201312','Cont\u00ednuo'];
+    // Extrair narrativas por fase do texto da IA
+    var narrativas=[];
+    var partes=cont.split(/(?=Fase\s*\d+\s*[-\u2013])/i).filter(function(p){return p.trim();});
+    if(partes.length>=nFases){
+      narrativas=partes.slice(0,nFases).map(function(p){
+        return p.replace(/^Fase\s*\d+[^:]*:\s*/i,'').replace(/\s+/g,' ').trim();
+      });
+    } else {
+      var linhas=cont.split('\n').filter(function(l){return l.trim();});
+      var chunk=Math.ceil(linhas.length/nFases)||1;
+      for(var i=0;i<nFases;i++) narrativas.push(linhas.slice(i*chunk,(i+1)*chunk).join(' ').trim()||'');
+    }
+    var rows='';
+    for(var i=0;i<nFases;i++){
+      var ci=i%6;
+      var srv=ORC[i];
+      var emoji=srv?srv.emoji:'\ud83d\udca1';
+      rows+='<tr style="background:'+cores[ci]+'">';
+      rows+='<td style="padding:13px 16px;border-bottom:1px solid #E5E7EB;vertical-align:top;white-space:nowrap">';
+      rows+='<div style="font-size:18px;margin-bottom:3px">'+emoji+'</div>';
+      rows+='<div style="font-weight:800;color:'+txts[ci]+';font-size:13px">Fase '+(i+1)+'</div></td>';
+      rows+='<td style="padding:13px 16px;border-bottom:1px solid #E5E7EB;vertical-align:top;white-space:nowrap;font-size:12px;font-weight:700;color:'+txts[ci]+'">'+(periodos[i]||'Cont\u00ednuo')+'</td>';
+      rows+='<td style="padding:13px 16px;border-bottom:1px solid #E5E7EB;vertical-align:top;font-size:13px;color:#374151;line-height:1.85;text-align:justify">'+(narrativas[i]||'')+'</td>';
+      rows+='</tr>';
+    }
+    var tabela='<div style="overflow:hidden;border-radius:12px;border:1.5px solid #E5E7EB;box-shadow:0 2px 8px rgba(76,29,149,.08)">';
+    tabela+='<table style="width:100%;border-collapse:collapse">';
+    tabela+='<thead><tr style="background:linear-gradient(135deg,#1E1B4B,#4C1D95)">';
+    tabela+='<th style="padding:12px 16px;text-align:left;color:#DDD6FE;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap">Fase</th>';
+    tabela+='<th style="padding:12px 16px;text-align:left;color:#DDD6FE;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap">Per\u00edodo</th>';
+    tabela+='<th style="padding:12px 16px;text-align:left;color:#DDD6FE;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em">O que acontece</th>';
+    tabela+='</tr></thead><tbody>'+rows+'</tbody></table></div>';
+    return '<section style="margin-bottom:30px"><h2 style="'+hs+'">Linha do Tempo</h2>'+tabela+'</section>';
+  }
+
+  // INVESTIMENTO
+  function buildInvest(cont){
+    var rows='';
+    at.forEach(function(s){
+      var q=parseInt(s.vQ)||1;var vt=parseFloat(s.valor||0)*q;var vx=parseFloat(s.vX||0)*q;
+      rows+='<tr><td style="padding:9px 14px;border-bottom:1px solid #F3F4F6;font-size:13px">'+s.emoji+' '+s.nome+(q>1?' <span style="font-size:11px;color:#4C1D95">\u00d7'+q+'</span>':'')+'</td>';
+      rows+='<td style="padding:9px 14px;border-bottom:1px solid #F3F4F6;text-align:right;font-size:13px"><span style="font-weight:600">'+(parseFloat(s.valor||0)>0?fmt(vt):'\u2014')+'</span>'+(vx>0?'<br><span style="font-size:11px;color:#0369A1">+'+fmt(vx)+' implanta\u00e7\u00e3o</span>':'')+'</td></tr>';
+    });
+    var avulsoRow=avulsoTotal>0?'<div style="padding:9px 14px;background:#EFF6FF;border-top:1px solid #BFDBFE;font-size:12px;color:#1E40AF;font-weight:600">\u2192 Total implanta\u00e7\u00f5es/avulsos: '+fmt(avulsoTotal)+' \u2014 pagamento \u00fanico</div>':'';
+    var descontoRows='';
+    if(desc>0) descontoRows='<div style="display:flex;justify-content:space-between;padding:6px 0;font-size:13px;color:#374151"><span>Subtotal</span><span>'+fmt(tot)+'</span></div><div style="display:flex;justify-content:space-between;padding:6px 0;font-size:13px;color:#DC2626"><span>Desconto</span><span>-'+fmt(desc)+'</span></div>';
+    var parcRow=nparc>1?'<div style="font-size:15px;font-weight:700;color:#16A34A;text-align:right;margin-top:5px">'+nparc+'x de '+fmt(Math.ceil(fin/nparc))+'</div>':'';
+    var paRow=pa?'<div style="font-size:12px;color:#6B7280;margin-top:8px">\ud83d\udcb3 '+pa+'</div>':'';
+    var bonusBox='';
+    if(totBon>0){
+      bonusBox='<div style="margin-top:14px;padding:14px 16px;background:#F0FDF4;border-radius:10px;border:1.5px solid #BBF7D0">';
+      bonusBox+='<div style="font-size:11px;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">\ud83c\udf81 B\u00f4nus inclu\u00eddos \u2014 valor de refer\u00eancia</div>';
+      bn.forEach(function(b){
+        var q=parseInt(b.vQ)||1;var vt=parseFloat(b.valor||0)*q;var vx=parseFloat(b.vX||0)*q;
+        bonusBox+='<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #DCFCE7;font-size:13px"><span style="color:#166534;font-weight:600">'+b.emoji+' '+b.nome+'</span><span style="color:#9CA3AF;text-decoration:line-through">'+(b.valor?fmt(vt+vx):'\u2014')+'</span></div>';
+      });
+      bonusBox+='<div style="display:flex;justify-content:space-between;padding:8px 0 0;font-size:14px;font-weight:800;color:#166534"><span>Total b\u00f4nus</span><span>'+fmt(totBon)+'</span></div>';
+      bonusBox+='<div style="font-size:11px;color:#6B7280;margin-top:8px;line-height:1.5">* B\u00f4nus ativos enquanto o contrato estiver vigente. Em caso de cancelamento, ser\u00e3o cobrados pelos valores acima.</div>';
+      bonusBox+='</div>';
+    }
+    var html='<section style="margin-bottom:30px"><h2 style="'+hs+'">Investimento</h2>';
+    html+='<div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden;margin-bottom:14px">';
+    html+='<table style="width:100%;border-collapse:collapse">'+rows+'</table>';
+    html+=avulsoRow;
+    html+='<div style="padding:14px">'+descontoRows;
+    html+='<div style="display:flex;justify-content:space-between;padding:10px 0 0;font-size:18px;font-weight:800;color:#1E1B4B;border-top:2px solid #E5E7EB"><span>Total \u2014 Plano '+plL+'</span><span style="color:#16A34A">'+fmt(fin)+'</span></div>';
+    html+=parcRow+paRow+'</div></div>'+bonusBox;
+    html+='<p style="font-size:13px;color:#374151;line-height:1.9;margin-top:14px">'+cont+'</p></section>';
+    return html;
+  }
+
+  // MONTAR BODY
+  var secs=txt.split(/##\s+/).filter(Boolean);
+  var body='';
+  var ltGerada=false;
+  secs.forEach(function(s){
+    var parts=s.trim().split('\n');
+    var tit=parts[0];
+    var cont=parts.slice(1).join('\n').trim();
+    if(!cont) return;
+    var tU=tit.trim().toUpperCase();
+    if(tU.includes('OS PILARES')){
+      body+='<section style="margin-bottom:30px"><h2 style="'+hs+'">'+tit.trim()+'</h2>'+pilarCards+'</section>';
+    } else if(tU.includes('LINHA DO TEMPO')){
+      body+=buildLT(cont);ltGerada=true;
+    } else if(tU.includes('INVESTIMENTO')){
+      if(!ltGerada&&ORC.length>0){body+=buildLT('');ltGerada=true;}
+      body+=buildInvest(cont);
+    } else if(tU.includes('PRÓXIMOS PASSOS')){
+      var ls=cont.split('\n').filter(function(l){return l.trim();}).slice(0,3);
+      var sec='<section style="margin-bottom:30px;background:linear-gradient(135deg,#1E1B4B,#4C1D95);border-radius:14px;padding:24px 26px">';
+      sec+='<h2 style="font-size:20px;font-weight:700;color:#fff;margin-bottom:16px">'+tit.trim()+'</h2>';
+      ls.forEach(function(l,i){
+        sec+='<div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:12px"><div style="min-width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:14px">'+(i+1)+'</div><div style="font-size:13px;color:#E9D5FF;line-height:1.6;padding-top:5px">'+l.replace(/^\d+[\.\)\]]\s*/,'')+'</div></div>';
+      });
+      body+=sec+'</section>';
+    } else if(tU.includes('TERMOS')){
+      var sec2='<section style="margin-bottom:30px"><h2 style="'+hs+'">'+tit.trim()+'</h2>';
+      sec2+='<p style="font-size:13px;color:#374151;line-height:1.9;margin-bottom:24px">'+cont+'</p>';
+      sec2+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px">';
+      sec2+='<div style="border-top:2px solid #9CA3AF;padding-top:14px"><div style="font-size:11px;color:#6B7280;margin-bottom:28px;font-weight:600">Assinatura do contratante</div><div style="font-size:11px;color:#9CA3AF;margin-bottom:10px">Nome: ____________________________</div><div style="font-size:11px;color:#9CA3AF;margin-bottom:10px">CPF/CNPJ: _________________________</div><div style="font-size:11px;color:#9CA3AF">Data: _____________________________</div></div>';
+      sec2+='<div style="border-top:2px solid #9CA3AF;padding-top:14px"><div style="font-size:11px;color:#6B7280;margin-bottom:28px;font-weight:600">MEC\u00ae | Priscila Guskuma</div><div style="font-size:11px;color:#9CA3AF;margin-bottom:10px">Nome: ____________________________</div><div style="font-size:11px;color:#9CA3AF;margin-bottom:10px">Data: _____________________________</div><div style="font-size:11px;color:#9CA3AF">Local: ____________________________</div></div>';
+      sec2+='</div></section>';
+      body+=sec2;
+    } else {
+      body+='<section style="margin-bottom:30px"><h2 style="'+hs+'">'+tit.trim()+'</h2><p style="font-size:14px;color:#374151;line-height:1.9">'+cont+'</p></section>';
+    }
+  });
+  if(!ltGerada&&ORC.length>0){
+    var idxInv=body.indexOf('<section style="margin-bottom:30px"><h2 style="'+hs+'">Investimento');
+    if(idxInv>=0) body=body.slice(0,idxInv)+buildLT('')+body.slice(idxInv);
+    else body+=buildLT('');
+  }
+
+  // HTML FINAL
+  var capa='<div style="background:linear-gradient(135deg,#1E1B4B,#4C1D95,#7C3AED);border-radius:18px;padding:48px 40px;margin-bottom:40px;text-align:center">';
+  capa+='<div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#C4B5FD;margin-bottom:14px">Proposta Comercial Exclusiva</div>';
+  capa+='<h1 style="font-size:30px;font-weight:800;color:#fff;margin-bottom:10px;line-height:1.2">'+nome+'</h1>';
+  if(seg) capa+='<div style="font-size:14px;color:#DDD6FE;margin-bottom:16px">'+seg+'</div>';
+  capa+='<div style="display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:7px 20px;font-size:12px;color:#EDE9FE;margin-bottom:18px">MEC\u00ae \u00b7 Mentoria Estrat\u00e9gica Corporativa | Priscila Guskuma</div>';
+  capa+='<div style="font-size:11px;color:#A78BFA;margin-bottom:8px">'+data+'</div>';
+  capa+=capaValores+'</div>';
+
+  return '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Proposta \u2014 '+nome+'</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;background:#F8F7FF;color:#111827}@media print{body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style></head><body>'+marcaHdr+'<div style="max-width:760px;margin:0 auto;padding:32px 28px">'+capa+body+'</div>'+marcaFtr+'</body></html>';
+}
+
+
+function limparOrc(){if(!confirm('Limpar o orçamento atual e começar um novo?'))return;ORC=[];document.getElementById('ores').style.display='none';document.getElementById('om').innerHTML='';document.getElementById('pm').innerHTML='';document.getElementById('pw').style.display='none';['cn','cs','co','cpr','dpa'].forEach(id=>document.getElementById(id).value='');['dp','dv','dparc'].forEach(id=>document.getElementById(id).value=0);propHTML='';window.scrollTo({top:0,behavior:'smooth'});}
+function baixarHTML(){if(!propHTML)return;const nome=document.getElementById('cn').value.trim()||'proposta';const blob=new Blob([propHTML],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='proposta_'+nome.replace(/\s+/g,'_').toLowerCase()+'_maiseller.html';document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(()=>URL.revokeObjectURL(url),3000);document.getElementById('inst').style.display='block';setTimeout(()=>document.getElementById('inst').style.display='none',12000);}
+</script>
+</body>
+</html>
